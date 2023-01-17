@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ApiRest</h1>
+
+    <h3>lien pour le CRUD</h3>
+    <ul>
+        <li>lister tout les livres : <a href="http://localhost:8080/books"> http://localhost:8080/books</a></li> 
+        <li>Recherche par id : <a href="http://localhost:8080/books/0">http://localhost:8080/books/0</a></li>
+        <li>supprimer un livre en Delete ac postman: <a href="http://localhost:8080/books/0">http://localhost:8080/books/0</a></li>
+    </ul>
+    <ul>
+        <li>Recherche par livre en Post ac postman: <a href=" http://localhost:8080/books/search"> http://localhost:8080/books/search</a></li>
+        <li>enregistrer un livre en Create : <a href="http://localhost:8080/books">http://localhost:8080/books</a> envoie de json ac postman :{
+            "title": "Java Spring",
+            "author": "vannou LE MORVAN",
+            "description": "Hervé LE MORVAN est aujourd’hui consultant"
+        }</li>
+        <li>Modifier un livre en Update ac postman: <a href="http://localhost:8080/books/0">http://localhost:8080/books/0</a>Modifier les données ac un json ac postman :{
+            "title": "Java Spring",
+            "author": "Hervé LE MORVAN",
+            "description": "Hervé LE MORVAN est aujourd’hui consultant"
+        }</li>
+    </ul>    
+    
+</body>
+</html>
