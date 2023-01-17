@@ -42,6 +42,7 @@ public class BookController {
         // getting blog
         Book bookToUpdate = bookRespository.findById(id).get();
         bookToUpdate.setAuthor(book.getAuthor());
+        bookToUpdate.setTitle(book.getTitle());
         bookToUpdate.setDescription(book.getDescription());
         return bookRespository.save(bookToUpdate);
     }
